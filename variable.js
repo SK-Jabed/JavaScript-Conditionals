@@ -11,20 +11,21 @@ var subject = "CSE";
 // Boolean
 var passed = true;
 
+
 /**
- * NAMING CONVENTION
+ *** NAMING CONVENTION ***
  * 1. Single Word
  * 2. No Quote
  * 3. No Gap or Dash
- * 4. Cannot Start with a Number 
- * 5. Cannot be a Keyword
+ * 4. Can Not Start with Number 
+ * 5. Can Not be a Keyword
  * 6. Prefer camelCase 
 */
 
-var lastExamResult = 69;
+var lastExamResult = 69; // Prefer Naming Convention: camelCase
 
 /**
- * Operation 
+ *** Operation ***
  * 1. =, -, *, /, %
  * 2. +=, -=, *=, /=
  * 3. isNaN
