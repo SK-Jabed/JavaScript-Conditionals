@@ -1,15 +1,15 @@
 const isLeader = true;
 // if(isLeader === true)
-if(isLeader){
+if (isLeader) {
     console.log('leader asche! chair charo');
 }
-else{
+else {
     console.log('vitore dukte dibi na');
 }
 
 const isPassed = true;
 // if(isPassed === false)
-if(!isPassed){
+if (!isPassed) {
     console.log('toke biya diya dimu');
 }
 else {

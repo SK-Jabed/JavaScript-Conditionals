@@ -1,5 +1,5 @@
 /**
- * MULTI_LEVEL CONDITION
+ * MULTI LEVEL CONDITION
 */
 
 const price = 2000;
