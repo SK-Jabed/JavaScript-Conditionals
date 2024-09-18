@@ -28,9 +28,9 @@ else {
 }
 
 
-const shirtPrice = 550;
+const shirtPrice = 600;
 
-if (shirtPrice < 600) {
+if (shirtPrice <= 600) {
     console.log("I will buy the shirt");
 }
 else {

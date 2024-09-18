@@ -25,7 +25,7 @@ var passed = true;
 var lastExamResult = 69; // Prefer Naming Convention: camelCase
 
 /**
- *** Operation ***
+ *** Operations ***
  * 1. =, -, *, /, %
  * 2. +=, -=, *=, /=
  * 3. isNaN

@@ -1,45 +1,56 @@
-const salary = 21001;
+const salary = 25000;
 const isBCS = true;
 const height = 68;
 const hasCar = false;
-height = 71;
 
 
-// if (salary > 20000 && height > 66) {
-//     console.log('Su----patro');
-// }
-// else {
-//     console.log('onno patro khuji')
-// }
-
-if (salary > 25000 || height > 72){
-    console.log('eso baba kobul');
+// --------------- SIMPLE CONDITIONS (&&) ------------------
+if (salary > 20000 && height > 66) {
+    console.log("Su-patro");
 }
 else {
-    console.log('vaag tui mokbul')
+    console.log("Onno Patro Khuji");
 }
 
 
-// More and More Condition
-// if (salary > 25000 || height > 72 || isBCS == true) {
-//     console.log('eso baba kobul');
-// }
-// else {
-//     console.log('vaag tui mokbul')
-// }
+// --------------- SIMPLE CONDITIONS (||) ------------------
+if (salary >= 25000 || height > 72) {
+    console.log("Aso Baba Kobul");
+}
+else {
+    console.log("Vaag Tui Mokbul")
+}
+
+
+// -------------- More and More Conditions -----------------
+if (salary > 25000 || height > 72 || isBCS == true) {
+    console.log("Eso Baba Kobul");
+}
+else {
+    console.log("Vaag Tui Mokbul");
+}
+
 
 if (salary > 25000 && height > 72 && isBCS == true) {
-    console.log('eso baba kobul');
+    console.log("Eso Baba Kobul");
 }
 else {
-    console.log('vaag tui mokbul')
+    console.log("Vaag Tui Mokbul");
 }
 
-// -----------------COMPLEX CONDITION--------------------
-if ((salary > 25000 && hasCar == true) || isBCS== true ){
-    console.log('tomar 14 gosti raji')
+
+// ----------------- COMPLEX CONDITION --------------------
+if ((salary > 25000 && hasCar == true) || isBCS == true ) {
+    console.log("14 Gosti Raji");
+}
+else {
+    console.log("Dakbo Nako Kaji");
 }
 
-if ((salary > 25000 || hasCar == true) && isBCS== true ){
-    console.log('tomar 14 gosti raji')
+
+if ((salary > 25000 || hasCar == true) && isBCS == true ) {
+    console.log("14 Gosti Raji");
+}
+else {
+    console.log("Dakbo Nako Kaji");
 }

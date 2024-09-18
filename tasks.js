@@ -1,19 +1,42 @@
-// Task - 01
+// ---------- Task - 01 ----------
 /***
+
 Free Drinks
     - Burger more than 500tk: free Coke
     - Else Coke: 30tk
+
 */
-var burgerPrice = 250;
+var burgerPrice = 600;
 
 if (burgerPrice > 500) {
     console.log("Free Coke");
-}
+} 
 else {
     console.log("Coke: 30tk");
 }
 
-// Task - 02 
+
+var burgerPrice2 = 250;
+var cokePrice = 30;
+var totalCost = burgerPrice2 + cokePrice;
+
+if (burgerPrice2 > 500) {
+    console.log("Your Cost is:", burgerPrice2);
+}
+else {
+    console.log("Your Cost is:", totalCost);
+}
+
+
+if (burgerPrice2 > 500) {
+    console.log(burgerPrice2);
+}
+else {
+    console.log(totalCost);
+}
+
+
+// ---------- Task - 02 ----------
 /*** 
 
 BMI Calculator and Health Category
@@ -27,9 +50,8 @@ Create a JavaScript program that calculates the Body Mass Index (BMI) and assign
     - Otherwise, you are obese.
 
 */
-var weight = "65";
-var height = "1.72"
-
+var weight = 65;
+var height = 1.72;
 var bmi = (weight / (height ** 2));
 
 if (bmi < 18.5) {
@@ -45,7 +67,8 @@ else {
     console.log("You are obese");
 }
 
-// Task - 03 
+
+// ---------- Task - 03 ----------
 /***
 
 Grade Calculator
@@ -59,28 +82,29 @@ Create a simple JavaScript program that takes a student's score as input and ret
     F: 0-59
 
 ***/
-var result = 92;
+var mark = 92;
 
-if (result >= 90 && result <=100) {
-    console.log("Your Result Grade is: A");
+if (mark >= 90 && mark <=100) {
+    console.log("Your Grade is: A");
 }
-else if (result >= 80 && result <= 89) {
-    console.log("Your Result Grade is: B");
+else if (mark >= 80 && mark <= 89) {
+    console.log("Your Grade is: B");
 }
-else if (result >= 70 && result <= 79) {
-    console.log("Your Result grade is: C");
+else if (mark >= 70 && mark <= 79) {
+    console.log("Your Grade is: C");
 }
-else if (result >= 60 && result <=69) {
-    console.log("Your Result Grade is: D");
+else if (mark >= 60 && mark <=69) {
+    console.log("Your Grade is: D");
 }
-else if (result >= 0 && result <=59){
-    console.log("Your Result Grade is: F");
+else if (mark >= 0 && mark <=59) {
+    console.log("Your Grade is: F");
 }
 else {
     console.log("You Were Absent");
 }
 
-// Task - 04
+
+// ---------- Task - 04 ----------
 /***
 
 if you get more then 80 then inside your friend score. 
@@ -92,21 +116,31 @@ if you get less than 80 go to home and sleep and act sad
 
 Note: 
 use nested if-else-if-else
+
 */
-var myFriendScore = 69;
+var myScore = 85; 
+var friendScore = 75; 
 
-if (myFriendScore > 80) {
-    console.log("OK, Let's go for a lunch");
-}
-else if (myFriendScore < 80 || myFriendScore >= 60) {
-    console.log("Good luck, next time");
-}
-else if (myFriendScore < 60 || myFriendScore >=40) {
-    console.log("Keep unseen friends massage");
+if (myScore > 80) {
+    if (friendScore > 80) {
+        console.log("OK, let's go for a lunch");
+    } 
+    else if (friendScore < 80 && friendScore >= 60) {
+        console.log("Good luck, next time");
+    }
+     else if (friendScore < 80 && friendScore >= 40) {
+        console.log("Keep your friend's massage unseen");
+    }
+     else {
+        console.log("Block your friend");
+    }
+} 
+else {
+    console.log("Go to home, sleep and act sad");
 }
 
 
-// Task - 05
+// ---------- Task - 05 ----------
 /***
 
 you have two numbers in two variables, called: num1, num2
@@ -118,10 +152,29 @@ write a simple if-else.
 
 also, write it using ternary operator.
 
- */
+*/
+// ------------ Simple If-Else ------------
+var num1 = 400;
+var num2 = 600;
+var result;
+
+if (num1 > num2) {
+    result = num1 * 2;
+}
+else {
+    result = num1 + num2;
+}
+
+console.log(result);
 
 
-// Task - 06
+// ------------ Ternary Operator ------------
+result = num1 > num2 ? num1 * 2 : num1 + num2;
+
+console.log(result);
+
+
+// ---------- Task - 06 ----------
 /***
 
 Ticket fare Calculator
@@ -129,4 +182,29 @@ Ticket fare Calculator
     - Students get a 50% discount
     - Senior citizens (age >= 60) gets a 15% Discount
     - Otherwise Regular ticket fare 800 tk
+
 */
+var age = 18;
+var isStudent = true;
+var ticketFare = 800;
+
+if (age < 10) {
+    ticketFare = "free";
+    console.log("Ticket Fare is:", ticketFare);
+} 
+else if (age <60) {
+    if (isStudent) {
+        ticketFare *= 0.5; // 50% discount 
+        console.log("Ticket Fare is:", ticketFare);
+    }
+    else {
+        console.log("Ticket Fare is:", ticketFare);
+    }
+}
+else if (age >= 60) {
+    ticketFare *= 0.85; // 15% discount
+    console.log("Ticket Fare is:", ticketFare);
+} 
+else {
+    console.log("Ticket Fare is:", ticketFare);
+}
